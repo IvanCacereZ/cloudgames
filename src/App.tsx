@@ -3,16 +3,16 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 
 function App() {
     const { unityProvider } = useUnityContext({
-        loaderUrl: "/UnityReact.loader.js",
-        dataUrl: "/UnityReact.data.unityweb",
-        frameworkUrl: "/UnityReact.framework.js.unityweb",
-        codeUrl: "/UnityReact.wasm.unityweb",
+        loaderUrl: "/game.loader.js",
+        dataUrl: "/game.data.unityweb",
+        frameworkUrl: "/game.framework.js.unityweb",
+        codeUrl: "/game.wasm.unityweb",
     });
 
     return (
         <div className="centered-container">
             <div className="centered-content">
-                <h1 className="centered-title">React + Unity / Tecsup</h1>
+                <h1 className="centered-title">BounceMania</h1>
                     <Unity unityProvider={unityProvider} className="centered-unity" />
             </div>
         </div>
